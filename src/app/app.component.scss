@@ -1,0 +1,30 @@
+.table-container {
+  padding: 1rem;
+  width: 100%;
+  overflow: auto;
+
+  table {
+    th, td {
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+
+.resizable-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+th {
+  position: relative;
+}
+
+.border-resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  cursor: col-resize;
+  z-index: 10;
+}
